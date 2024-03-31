@@ -22,3 +22,5 @@ class Solution:
             return True
         else:
             return False
+
+# 38 / 45 testcases passed.
