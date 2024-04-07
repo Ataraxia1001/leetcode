@@ -14,12 +14,12 @@ class Solution(object):
                     print('cnt > 1')
                     return False
             
-                elif s[i] == s[-i-2] and cnt_right < 1:  
+                elif s[i] == s[-i-2]:  
                     cnt += 1
                     s.pop(-i-1)
                     print('pop -i-1')
                     continue
-                elif s[i+1] == s[-i-1] and cnt_left < 1:
+                elif s[i+1] == s[-i-1]:
                     print(cnt)
                     cnt += 1
                     s.pop(i)
@@ -28,3 +28,5 @@ class Solution(object):
                 else:
                     return False
         return True
+    
+# 466 / 471 testcases passed
